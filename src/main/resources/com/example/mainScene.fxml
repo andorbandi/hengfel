@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <TextField fx:id="radiusField" layoutX="14.0" layoutY="188.0" />
+      <TextField fx:id="heightField" layoutX="170.0" layoutY="188.0" />
+      <TextField fx:id="surfaceField" layoutX="437.0" layoutY="188.0" />
+      <Button layoutX="346.0" layoutY="188.0" mnemonicParsing="false" onAction="#onClickCalcButton" text="Számítás" />
+      <Label layoutX="14.0" layoutY="171.0" text="Sugár" />
+      <Label layoutX="170.0" layoutY="171.0" text="Magasság" />
+      <Label layoutX="437.0" layoutY="171.0" text="Felszín" />
+      <Label layoutX="15.0" layoutY="369.0" text="Szép Andor, IN, 2026-04-14" />
+      <Label layoutX="97.0" layoutY="76.0" text="Köralapú henger felszín számítás">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REPEAT" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.6666666865348816" opacity="0.8399999737739563" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.6666666865348816" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</Pane>
